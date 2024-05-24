@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.headerSections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+  .navContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navBar {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          list-style: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .basket{
+        cursor: pointer;
+    }
+    .hamburgerMenu {
+      display: none;
+      position: relative;
+      cursor: pointer;
+
+      ul {
+        display: none;
+        position: absolute;
+        list-style: none;
+        cursor: pointer;
+      }
+      &:hover ul {
+        display: block;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 576px){
+    
+.headerSections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+    .navContainer {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .navBar {
+        width: 80%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        ul {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          li {
+            list-style: none;
+            cursor: pointer;
+          }
+        }
+      }
+      .basket{
+          cursor: pointer;
+      }
+      .hamburgerMenu {
+        display: block;
+        position: relative;
+        cursor: pointer;
+  
+        ul {
+          display: none;
+          position: absolute;
+          list-style: none;
+          cursor: pointer;
+        }
+        &:hover ul {
+          display: block;
+        }
+      }
+    }
+  }
+    
+    
+}
